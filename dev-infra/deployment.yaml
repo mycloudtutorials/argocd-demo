@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web-app
+  name: my-web-app
   namespace: web-dev-namespace
   labels:
     app: my-web-app
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: my-web-app
-        image: mycloudtutorials/argocd-demo:2.0
+        image: mycloudtutorials/argocd-demo:1.0
         ports:
         - containerPort: 80
