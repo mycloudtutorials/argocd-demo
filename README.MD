@@ -36,6 +36,10 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 After creating the application.yaml, apply it using 
 kubectl apply -f application.yaml
 ```
+5a. (Optional as needed) - setup port forwarding
+```
+kubectl port-forward -n argocd svc/argocd-server 8010:443
+```
 
 6. Check the UI, explore the application, deployment topology, services, replicasets, pods etc.
 
