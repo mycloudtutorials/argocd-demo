@@ -4,7 +4,7 @@ metadata:
   name: my-web-app
   namespace: web-dev-namespace
   labels:
-    app: my-web-app
+    app: web-app
 spec:
   replicas: 1
   selector:
